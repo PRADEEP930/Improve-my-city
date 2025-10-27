@@ -19,6 +19,9 @@ initDatabase();
 // Routes
 app.use('/api/issues', require('./routes/issues'));
 
+// Add after other routes
+app.use('/api/auth', require('./routes/auth'));
+
 // Basic health check route
 app.get('/', (req, res) => {
   res.json({ 
