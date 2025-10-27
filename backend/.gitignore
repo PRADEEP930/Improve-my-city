@@ -4,3 +4,6 @@ uploads/
 .env.local
 .DS_Store
 *.log
+
+.ebextensions
+deploy.zip
