@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-// Use deployed backend URL - NOT localhost!
-const API_BASE_URL = process.env.NODE_ENV === 'Production' 
-  ? 'https://improve-my-city-jntn.onrender.com/api'
-  : 'http://localhost:5000/api';
+// Use environment variable for API URL
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+
+console.log('API Base URL:', API_BASE_URL); // Debug log
 
 const api = axios.create({
   baseURL: API_BASE_URL,
