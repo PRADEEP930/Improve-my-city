@@ -1,4 +1,5 @@
 import { Container, Typography, Box } from '@mui/material';
+import IssueReport from '../src/components/IssueReport';
 
 export default function Home() {
   return (
@@ -10,9 +11,8 @@ export default function Home() {
         <Typography variant="h6" component="h2" color="text.secondary">
           Report civic issues in your neighborhood. Make your city better!
         </Typography>
-        <Typography variant="body1" sx={{ mt: 3 }}>
-          Application under construction... Features coming soon!
-        </Typography>
+        
+        <IssueReport />
       </Box>
     </Container>
   );
