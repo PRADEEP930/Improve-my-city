@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Use deployed backend URL - NOT localhost!
-const API_BASE_URL = process.env.NODE_ENV === 'production' 
+const API_BASE_URL = process.env.NODE_ENV === 'Production' 
   ? 'https://improve-my-city-jntn.onrender.com/api'
   : 'http://localhost:5000/api';
 
